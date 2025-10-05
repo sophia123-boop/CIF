@@ -1,6 +1,3 @@
-# If missing special characters in uploaded code
-# !!! please copy the latest source code from the 'Review' tab.
-
 # printing bakery name to console
 print("\t\t\t✧･ﾟ: *✧･ﾟ✧Dream Bakery:･ﾟ✧*:･ﾟ✧")
 print("\t\t\t\t┗━•❃°•°❀°•°❃•━┛")
