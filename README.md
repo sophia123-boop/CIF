@@ -45,6 +45,8 @@ For my game, I added these features:
 - Let user give a rating of the game
 - Option to play another round
 
+If you want to know more visit my medium page: [medium](https://medium.com/@sofiew0504/cif-projects-week-two-a2a0e84cd4d1)
+
 ## Your turn
 Now it's your turn to try, ff this sounds intresting to you or someone you know, you can sign up for classes here: [cif sign ups](https://www.itisfun.org/)
 
