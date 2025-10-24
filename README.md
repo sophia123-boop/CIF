@@ -13,5 +13,5 @@ It is a public program to help young coders to learn programming via various fun
 
 We cover six prjects via 20 units.
 ## Projects
-### Project 1:
+### Project 1: Number Guessing Game
 
