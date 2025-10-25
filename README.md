@@ -21,6 +21,18 @@ We cover six prjects in 20 units.
 #### What it is:
 As the name suggests, it's a simple number guessing game, where you would enter a range you would like to guess from. As well as if you would like to limit tries and how many - meaning you choose the difficulty you want. The system randomly generates the number and with hints you would start guessing.
 
+#### How it's created:
+1. Simply lay out your basic steps in a flowchart:
+
+``` mermaid
+graph TD
+  A[start] --> B[generate random number] --> C[ask user to input their guess] --> D{matched?};
+  D --> E[print you win] --> G[end];
+  D --> F[print you lose] --> G[end];
+```
+
+2. Code the simpler ideas, before one by one adding more features and ideas:
+
 #### How to play:
 For my game, I added these features:
 - Asking for lower and higher boundaries. If user enters a non-integer it'll result an error and loop back to ask again.
@@ -43,7 +55,7 @@ For my game, I added these features:
 
 Otherwise, just copy it into any python IED and run it.
 
-If you want to know more visit my medium page: [medium](https://medium.com/@sofiew0504/cif-projects-week-two-a2a0e84cd4d1)
+To know more visit my medium page: [medium](https://medium.com/@sofiew0504/cif-projects-week-two-a2a0e84cd4d1)
 
 ## Your turn
 Now it's your turn to try, ff this sounds intresting to you or someone you know, you can sign up for classes here: [cif sign ups](https://www.itisfun.org/)
