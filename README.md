@@ -21,15 +21,6 @@ We cover six prjects in 20 units.
 #### What it is:
 As the name suggests, it's a simple number guessing game, where you would enter a range you would like to guess from. As well as if you would like to limit tries and how many - meaning you choose the difficulty you want. The system randomly generates the number and with hints you would start guessing.
 
-#### How it's created:
-1. Flowchart - Every complex code begins with a flowchart to set your ideas into logical paths. For these, we used Lucid, which made it all the easier. Starting with the simplest ideas of "Start", "generate random number", "user inputs guess", "result and end". Then slowly adding more details steps and different possible paths.  
-<img width="286" height="414" alt="image" src="https://github.com/user-attachments/assets/0426fc7d-70e0-446a-be29-99e30272d7f3" />  
-
-2. Code - Start simple, with the most basic ideas. We learned about importing the randint function, which chooses a random number and saves it as a variable. You then create a user input line to ask for their guess. If they're correct, print "you win", else print "you lose" (or something like that).
-<img width="400" height="194" alt="image" src="https://github.com/user-attachments/assets/8fc86741-7e57-452d-8d85-ee439b9facf4" />
-
-3. Additions - To continue adding, organize your ideas in a list. Think about if you were the player, what you would like to see in a game. Either if it's good hints and many tries or limiting tries. Then one by one, add them in.
-
 #### How to play:
 For my game, I added these features:
 - Asking for lower and higher boundaries. If user enters a non-integer it'll result an error and loop back to ask again.
@@ -44,6 +35,13 @@ For my game, I added these features:
 
 - Let user give a rating of the game
 - Option to play another round
+
+#### To install/play:
+1. Setup a python environment in your VS code
+2. Download py file from my github
+3. Save, run, and enjoy!
+
+Otherwise, just copy it into any python IED and run it.
 
 If you want to know more visit my medium page: [medium](https://medium.com/@sofiew0504/cif-projects-week-two-a2a0e84cd4d1)
 
