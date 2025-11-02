@@ -14,7 +14,7 @@ CIF or Coding Is Fun is a public program to help young coders to learn programmi
 
 And much more.
 
-We cover six prjects in 20 units.
+We cover six prjects in 20 units, all of which, the process, flowchart, and code will be uploaded to this repository.
 ## Projects
 ### Project 1: Number Guessing Game
 
