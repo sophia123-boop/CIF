@@ -48,7 +48,7 @@ For my game, I added these features:
 - Let user give a rating of the game
 - Option to play another round
 
-To know more visit my medium page: [medium](https://medium.com/@sofiew0504/cif-projects-week-two-a2a0e84cd4d1)
+To know more visit my medium page: [CIF Projects #1 — Number Guessing Game](https://medium.com/@sofiew0504/cif-projects-week-two-a2a0e84cd4d1)
 
 ### Project 2: TBAG
 
@@ -79,7 +79,7 @@ p.s. you start with nine hearts, each choice end you up with a different number 
 <img width="1200" height="67" alt="image" src="https://github.com/user-attachments/assets/2e711efe-1484-417d-8fb0-8d621b3e2f71" />
 Better luck next time!
 
-To know more visit my medium page: [medium](https://medium.com/@sofiew0504/cif-projects-2-text-based-adventure-game-109e891b54f0)
+To know more visit my medium page: [CIF Projects #2 — Text Based Adventure Game](https://medium.com/@sofiew0504/cif-projects-2-text-based-adventure-game-109e891b54f0)
 
 ### To install/play:
 For any of these games, if you want to try yourself: 
