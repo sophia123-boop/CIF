@@ -48,16 +48,46 @@ For my game, I added these features:
 - Let user give a rating of the game
 - Option to play another round
 
-#### To install/play:
+To know more visit my medium page: [medium](https://medium.com/@sofiew0504/cif-projects-week-two-a2a0e84cd4d1)
+
+### Project 2: TBAG
+
+#### What it is:
+TBAG stands for a text based adventure game. Meaning, the user interacts with a game through text only, and the outcomes depends on each choice the user makes. It can be a point scoring trivia game, or a choose your own adventure one with a storyline. Which is what I've created here.
+
+#### How it's created:
+The main steps we learned about can be concluded to five simple stages:
+1. Analyze the flow - as always, start a simple flowchart. Using Lucidchart or draw.io, think the overall pattern of your game/code.
+2. Program the flow - now turn your thoughts into codes. Add comments either to remind yourself to add something later or simply for the organization.
+3. Define the functions - we learned all about what functions are and how to define them. Here is when you would start thinking which steps of the code you want to make function of and how.
+4. Call the functions - after defining it, you'll be able to call/use it later on in the code without having to copy huge blocks of code around.
+5. Refine the code - here in the final stage, you would polish it and code any thoughts you added as comments in step two. and tada!
+
+#### How to play:
+I created a choose you own adventure typed game.
+
+Backgrounder: You wake up one morning in a magical world. From a owl's scroll, you have been called to save the royal princess from the evil witch! You'll face monsters and magical elements (and bonding with the owl, of course) and hopefully survive this journey!
+
+p.s. you start with nine hearts, each choice end you up with a different number of lives left, good luck adventurer!
+
+<img width="800" height="38" alt="image" src="https://github.com/user-attachments/assets/e85130d3-43c9-4436-a112-1c160155193b" />
+
+
+<img width="1200" height="121" alt="image" src="https://github.com/user-attachments/assets/da0915a4-d80e-4b54-9bc4-93681fff1a14" />
+
+
+<img width="1200" height="67" alt="image" src="https://github.com/user-attachments/assets/2e711efe-1484-417d-8fb0-8d621b3e2f71" />
+Better luck next time!
+
+To know more visit my medium page: [medium](https://medium.com/@sofiew0504/cif-projects-2-text-based-adventure-game-109e891b54f0)
+
+### To install/play:
+For any of these games, if you want to try yourself: 
 1. Setup a python environment in your VS code
 2. Download py file from my github
 3. Save, run, and enjoy!
 
 Otherwise, just copy it into any python IED and run it.
 
-To know more visit my medium page: [medium](https://medium.com/@sofiew0504/cif-projects-week-two-a2a0e84cd4d1)
-
 ## Your turn
 Now it's your turn to try, ff this sounds intresting to you or someone you know, you can sign up for classes here: [cif sign ups](https://www.itisfun.org/)
-
-
