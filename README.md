@@ -81,6 +81,13 @@ Better luck next time!
 
 To know more visit my medium page: [CIF Projects #2 — Text Based Adventure Game](https://medium.com/@sofiew0504/cif-projects-2-text-based-adventure-game-109e891b54f0)
 
+### Project 3: Turtle Fireworks
+
+#### What it is:
+Turtle is built in function in python that creates a digital turtle that'll draw shapes or whatever you code it to. Our project this time is to create a firework scene in the night sky.
+
+To know more visit my medium page: [CIF Project #3 - Turtle Fireworks](https://medium.com/@sofiew0504/cif-projects-3-32462f9d358e?postPublishedType=initial)
+
 ### To install/play:
 For any of these games, if you want to try yourself: 
 1. Setup a python environment in your VS code
