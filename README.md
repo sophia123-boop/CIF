@@ -86,7 +86,19 @@ To know more visit my medium page: [CIF Projects #2 — Text Based Adventure Gam
 #### What it is:
 Turtle is built in function in python that creates a digital turtle that'll draw shapes or whatever you code it to. Our project this time is to create a firework scene in the night sky.
 
+#### How it's created:
+As this project isn't exactly a game, we didn't need a flowchart. But we did start from the basics by planning out the simple steps for a turtle to draw our vision. Before the actual fireworks, we went through a bunch exercises from a simple polygon to drawing complicated optical illusion like shapes.
+
+<img width="480" height="444" alt="image" src="https://github.com/user-attachments/assets/350cd75e-39bd-4f5c-9e5e-cb6b8cb23c77" />
+
 To know more visit my medium page: [CIF Project #3 - Turtle Fireworks](https://medium.com/@sofiew0504/cif-projects-3-32462f9d358e?postPublishedType=initial)
+
+### Project 4: Pygame
+#### What it is:
+#### How it's created:
+#### How to play:
+
+To know more visit my medium page:
 
 ### To install/play:
 For any of these games, if you want to try yourself: 
