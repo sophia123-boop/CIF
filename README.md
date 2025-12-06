@@ -98,7 +98,7 @@ To know more visit my medium page: [CIF Project #3 - Turtle Fireworks](https://m
 #### How it's created:
 #### How to play:
 
-To know more visit my medium page: [CIF Project #4 - Pygame] (https://medium.com/@sofiew0504/cif-projects-4-pygame-c31ee3a5ab4a?postPublishedType=repub)
+To know more visit my medium page: [CIF Project #4 - Pygame](https://medium.com/@sofiew0504/cif-projects-4-pygame-c31ee3a5ab4a?postPublishedType=repub)
 
 ### To install/play:
 For any of these games, if you want to try yourself: 
