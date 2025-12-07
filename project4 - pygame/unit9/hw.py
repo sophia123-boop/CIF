@@ -11,7 +11,7 @@ width = 800
 height = 600
 
 # starting coordinates of box
-box_size = 30
+box_size = 60
 
 # box 1 coordinates
 box_x = 0
@@ -22,8 +22,8 @@ box_x2 = width - box_size
 box_y2 = height - box_size
 
 # initializing boxes
-rect1 = pygame.Rect(box_x, box_y, 30, 30)
-rect2 = pygame.Rect(box_x2, box_y2, 30, 30)
+rect1 = pygame.Rect(box_x, box_y, 60, 60)
+rect2 = pygame.Rect(box_x2, box_y2, 60, 60)
 
 # create screen
 screen = pygame.display.set_mode((width, height))
@@ -48,8 +48,8 @@ while True:
     box_x2 -= 5
 
     # drawing the boxes
-    rect1 = pygame.Rect(box_x, box_y, 30, 30)
-    rect2 = pygame.Rect(box_x2, box_y2, 30, 30)
+    rect1 = pygame.Rect(box_x, box_y, 60, 60)
+    rect2 = pygame.Rect(box_x2, box_y2, 60, 60)
     pygame.draw.rect(screen, pink, rect1)
     pygame.draw.rect(screen, green, rect2)
 
