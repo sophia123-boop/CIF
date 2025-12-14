@@ -35,11 +35,11 @@ while True:
         if event.type == pygame.QUIT: # exit
             exit()
 
-    # if pink box touches edge, stop
+    # if green box touches edge, stop
     if box_x + box_size > width:
         box_x = width - box_size
 
-    # if green box touches edge, stop
+    # if pink box touches edge, stop
     if box_x2 < 0:
         box_x2 = 0
 
@@ -50,8 +50,8 @@ while True:
     # drawing the boxes
     rect1 = pygame.Rect(box_x, box_y, 60, 60)
     rect2 = pygame.Rect(box_x2, box_y2, 60, 60)
-    pygame.draw.rect(screen, pink, rect1)
-    pygame.draw.rect(screen, green, rect2)
+    pygame.draw.rect(screen, green, rect1)
+    pygame.draw.rect(screen, pink, rect2)
 
     # update screen, erase prior instances
     pygame.display.update()
