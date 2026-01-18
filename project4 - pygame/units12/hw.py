@@ -87,13 +87,16 @@ try:
     difficulty = int(input("Enter difficulty of bullets (1-5, recommend 3): "))
 except ValueError:
     difficulty = 5
-
+    
 bullet_speed = -difficulty
-bullet1 = pygame.Rect(0, bullet_y, 15, 15)
-bullet2 = pygame.Rect(200, bullet_y, 15, 15)
-bullet3 = pygame.Rect(400, bullet_y, 15, 15)
+bullet1 = pygame.Rect(600, bullet_y, 15, 15)
+bullet2 = pygame.Rect(120, bullet_y, 15, 15)
+bullet3 = pygame.Rect(240, bullet_y, 15, 15)
+bullet4 = pygame.Rect(360, bullet_y, 15, 15)
+bullet5 = pygame.Rect(480, bullet_y, 15, 15)
 
-bullet_list = [bullet1, bullet2, bullet3]
+bullet_list = [bullet1, bullet2, bullet3, bullet4, bullet5]
+
 
 clock = pygame.time.Clock()
 while True:
