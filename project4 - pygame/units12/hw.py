@@ -197,7 +197,7 @@ while True:
             else:
                 cb_x += bullet_speed
                 if abs(cb_rect.centery - bullet.centery) < 20:
-                    cb_shot = 15
+                    cb_shot = -15
 
     #capybara carrot detection
     carrot_rect = pygame.Rect(250, 100, carrot_width, carrot_height)
