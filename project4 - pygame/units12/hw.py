@@ -1,5 +1,4 @@
 import pygame
-import math
 
 pygame.init()
 
@@ -87,7 +86,7 @@ try:
     difficulty = int(input("Enter difficulty of bullets (1-5, recommend 3): "))
 except ValueError:
     difficulty = 5
-    
+
 bullet_speed = -difficulty
 bullet1 = pygame.Rect(600, bullet_y, 15, 15)
 bullet2 = pygame.Rect(120, bullet_y, 15, 15)
@@ -96,7 +95,6 @@ bullet4 = pygame.Rect(360, bullet_y, 15, 15)
 bullet5 = pygame.Rect(480, bullet_y, 15, 15)
 
 bullet_list = [bullet1, bullet2, bullet3, bullet4, bullet5]
-
 
 clock = pygame.time.Clock()
 while True:
@@ -188,12 +186,7 @@ while True:
     for bullet in bullet_list:
         if cb_rect.colliderect(bullet):
             if bullet == bullet3:
-                dist_x = cb_rect.centerx - bullet.centerx
-                dist_y = cb_rect.centery - bullet.centery
-                distance = math.sqrt(dist_x**2 + dist_y**2)
-                
-                if distance < 30:
-                    game_lost = True
+                game_lost = True
             else:
                 cb_x += bullet_speed
                 if abs(cb_rect.centery - bullet.centery) < 20:
@@ -235,6 +228,8 @@ while True:
         screen.blit(win, win_rect)
         screen.blit(retry, (width//2 - 150, height//2 + 50))
         screen.blit(cb, (width//2 - 50, height//2 + 150))
+        cb_x = 0
+        cb_y = 0
 
     if game_lost:
         screen.fill(white)
