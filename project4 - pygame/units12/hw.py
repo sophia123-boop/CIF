@@ -19,7 +19,7 @@ screen = pygame.display.set_mode((width, height))
 #setting up capybara
 cb = pygame.image.load("cif/cif/zpictures/capybara.png").convert_alpha()
 orig_width, orig_height = cb.get_size()
-new_cb = (int(orig_width * 0.3), int(orig_height * 0.3))
+new_cb = (int(orig_width * 0.35), int(orig_height * 0.35))
 cb = pygame.transform.smoothscale(cb, new_cb)
 cb_width, cb_height = cb.get_size()
 
@@ -45,7 +45,7 @@ cb_x = 200
 cb_y = 1000
 cb_rect = pygame.Rect(cb_x, cb_y, cb_width, cb_height)
 cb_x_change = 0
-speed = 8
+speed = 10
 cb_shot = 0
 
 move_left = False
@@ -59,7 +59,11 @@ is_jumping = False
 
 #ledges
 ledge_width = cb_width+10
-ledge_speed = 5
+
+try:
+    ledge_speed = int(input("Enter difficulty of clouds (1-8, recommend 5): "))
+except ValueError:
+    ledge_speed = 8
 
 ledge1 = pygame.Rect(100, 800, ledge_width, 10)
 ledge2 = pygame.Rect(400, 650, ledge_width, 10)
@@ -72,7 +76,7 @@ ledge_list = [ledge1, ledge2, ledge3, ledge4, ledge5,]
 #setting up clouds
 cloud = pygame.image.load("cif/cif/zpictures/cloud.png").convert_alpha()
 orig_width, orig_height = cloud.get_size()
-new_cloud = (int(orig_width * 0.5), int(orig_height * 0.5))
+new_cloud = (int(orig_width * 0.55), int(orig_height * 0.55))
 cloud = pygame.transform.smoothscale(cloud, new_cloud)
 cloud_width, cloud_height = cloud.get_size()
 
@@ -80,18 +84,16 @@ cloud_width, cloud_height = cloud.get_size()
 bullet_y = ledge3.top - 50
 
 try:
-    difficulty = int(input("Enter difficulty (1-8, recommend 5): "))
+    difficulty = int(input("Enter difficulty of bullets (1-5, recommend 3): "))
 except ValueError:
     difficulty = 5
 
 bullet_speed = -difficulty
-bullet1 = pygame.Rect(120, bullet_y, 15, 15)
-bullet2 = pygame.Rect(240, bullet_y, 15, 15)
-bullet3 = pygame.Rect(360, bullet_y, 15, 15)
-bullet4 = pygame.Rect(480, bullet_y, 15, 15)
-bullet5 = pygame.Rect(600, bullet_y, 15, 15)
+bullet1 = pygame.Rect(0, bullet_y, 15, 15)
+bullet2 = pygame.Rect(200, bullet_y, 15, 15)
+bullet3 = pygame.Rect(400, bullet_y, 15, 15)
 
-bullet_list = [bullet1, bullet2, bullet3, bullet4, bullet5]
+bullet_list = [bullet1, bullet2, bullet3]
 
 clock = pygame.time.Clock()
 while True:
@@ -229,11 +231,15 @@ while True:
         win_rect = win.get_rect(center=(width//2, height//2))
         screen.blit(win, win_rect)
         screen.blit(retry, (width//2 - 150, height//2 + 50))
+        screen.blit(cb, (width//2 - 50, height//2 + 150))
 
     if game_lost:
         screen.fill(white)
         lose_rect = lose.get_rect(center=(width//2, height//2))
         screen.blit(lose, lose_rect)  
-        screen.blit(retry, (width//2 - 150, height//2 + 50))  
+        screen.blit(retry, (width//2 - 150, height//2 + 50))
+        screen.blit(cb, (width//2 - 50, height//2 + 150))
+        cb_rect.x, cb_rect.y = width//2 - 50, height//2 + 150
+        pygame.draw.circle(screen, red, cb_rect.center, 10)
 
     pygame.display.update()
