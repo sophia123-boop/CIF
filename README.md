@@ -95,8 +95,18 @@ To know more visit my medium page: [CIF Project #3 - Turtle Fireworks](https://m
 
 ### Project 4: Pygame
 #### What it is:
+PyGame is a set of built in Python module that allows you to create and visualze games. By changing the frame every few seconds, you can make it look like things are coming to live and moving around.
+
 #### How it's created:
+I first planned out what the basic objective of the game is, which is a platformer game to get to the top of the screen for a prize. I sketched out where things would be and what it would look like on paper to have a better layout, then started coding. It begun with finding pictures and creating this controllable variable of our main character Mr Capybara. Then came ledges or clouds he could jump on to reach his carrot. Then, more ideas started coming, and I added them one by one. For example:
+- adding bullets as obstacles
+- an instructions screen
+etc.
+
+<img src="(https://miro.medium.com/v2/resize:fit:720/format:webp/1*e0BlXkQBba9grW9YOPYV4g.png)" alt="Alt text" width="600" height="950">
+
 #### How to play:
+
 
 To know more visit my medium page: [CIF Project #4 - Pygame](https://medium.com/@sofiew0504/cif-projects-4-pygame-c31ee3a5ab4a?postPublishedType=repub)
 
