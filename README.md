@@ -103,10 +103,12 @@ I first planned out what the basic objective of the game is, which is a platform
 - an instructions screen
 etc.
 
-<img src="(https://miro.medium.com/v2/resize:fit:720/format:webp/1*e0BlXkQBba9grW9YOPYV4g.png)" alt="Alt text" width="600" height="950">
+<img width="668" height="1046" alt="Screenshot 2026-01-29 at 5 30 48 PM" src="https://github.com/user-attachments/assets/b76a52e5-89a2-4689-842a-025b24c77832" />
+
+Almost 90% of this program is based on the collision detection function which allow something to happen when two things collide. For example, winning or losing the game by colling with carrots and bullets, or the buttons to start the game that collides with your mouse.
 
 #### How to play:
-
+The goal of the first version is to simply jump on the moving clouds to reach a carrot to win. The second/final version is a never ending climb that keeps track of your highscores. Using arrow keys, you can control Mr Capybara to land on clouds at the right time while avoiding the bullets. The black bullets are harmless other than push you aside a few pixels, the red one however, is deadly.
 
 To know more visit my medium page: [CIF Project #4 - Pygame](https://medium.com/@sofiew0504/cif-projects-4-pygame-c31ee3a5ab4a?postPublishedType=repub)
 
@@ -117,6 +119,8 @@ For any of these games, if you want to try yourself:
 3. Save, run, and enjoy!
 
 Otherwise, just copy it into any python IED and run it.
+
+For special ones like turtle and pygame, you can't run in any python IED as most don't support the modules. Also for pygame, you'll need to download the images attached to this github in order to play the game with visuals.
 
 ## Your turn
 Now it's your turn to try, if this sounds intresting to you or someone you know, you can sign up for classes here: [cif sign ups](https://www.itisfun.org/)
