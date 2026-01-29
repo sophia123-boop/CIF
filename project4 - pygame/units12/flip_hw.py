@@ -71,19 +71,16 @@ lose = timesNewRoman.render("Oh no! Mr Capybara was shot!", True, black)
 retry = timesNewRoman.render("Press space to play again", True, black)
 start_text = timesNewRoman.render("START GAME", True, black)
 
-#booleans
+#game state booleans
 game_won = False
 game_lost = False
 
-#ready button
+#buttons
 ready_button = pygame.Rect(width//2 - 100, height//2 + 100, 200, 50)
-
-#start button
 start_button = pygame.Rect(width//2 - 100, height//2 + 100, 200, 50)
 
 #ledges
 ledge_width = cb_width+10
-
 ledge_speed = 5
 
 ledge1 = pygame.Rect(100, 800, ledge_width, 10)
@@ -103,7 +100,6 @@ cloud_width, cloud_height = cloud.get_size()
 
 #bullets
 bullet_y = ledge3.top - 50
-
 bullet_speed = -5
 
 bullet1 = pygame.Rect(600, bullet_y, 15, 15)
@@ -129,14 +125,16 @@ while True:
         #activate start button and ready button
         if event.type == pygame.MOUSEBUTTONDOWN:
             if start_screen:
+                #ending start screen, beginning instructions
                 if start_button.collidepoint(mouse_pos):
                     start_screen = False
                     show_instructions = True
-
+            
+            #ending instructions
             elif show_instructions:
                 if ready_button.collidepoint(mouse_pos):
                     show_instructions = False
-
+        #start play
         if not start_screen and not show_instructions:
 
             #restart controls
@@ -145,14 +143,23 @@ while True:
                     if game_won:
                             ledge_speed += random.randint(1,3)
                             bullet_speed += random.randint(-3,-1)
-                            
+
+                    #reset game state        
                     if game_won or game_lost:
                         game_won = False
                         game_lost = False
-                                    
-                        cb_x = 200
-                        cb_y = 800
-                        cb_y_change = 0
+
+                    #reset capybara                
+                    cb_x = 200
+                    cb_y = 800
+                    cb_y_change = 0
+
+                    #reset ledges and bullets
+                    ledge1.y, ledge2.y, ledge3.y, ledge4.y, ledge5.y = 800, 650, 500, 375, 200
+                    ledge1.x, ledge2.x, ledge3.x, ledge4.x, ledge5.x = 100, 400, 200, 500, 250 
+                    for bullet in bullet_list:
+                        bullet.y = bullet_y
+                    bullet1.x, bullet2.x, bullet3.x, bullet4.x, bullet5.x = 600, 120, 240, 360, 480
 
                 #capybara controls
                 if event.key == pygame.K_RIGHT:
@@ -162,7 +169,7 @@ while True:
                     cb_x_change += speed
                     move_right = True
                 if event.key == pygame.K_UP:
-                    if jump_count < 2:
+                    if jump_count < 2: #double jumps
                         cb_y_change = jump
                         jump_count += 1
                         is_jumping = True
@@ -176,6 +183,7 @@ while True:
         
     #playing
     if not start_screen and not show_instructions and not game_won and not game_lost:
+        
         #capybara movement
         cb_x += cb_x_change + cb_shot
         cb_y_change += gravity
@@ -183,6 +191,7 @@ while True:
             cb_y_change = 15
         cb_y += cb_y_change
 
+        #capybara bullet shot back
         if cb_shot > 0:
             cb_shot -= 1
         elif cb_shot < 0:
@@ -248,14 +257,19 @@ while True:
 
     screen.fill(blue)
     
+    #start screen
     if start_screen:
         screen.blit(cb, (width//2 - cb_width//2, height//2 - cb_height//2))
         start_button_color = gray if start_button.collidepoint(mouse_pos) else white
+        
+        #start button
         pygame.draw.rect(screen, start_button_color, start_button, border_radius = 10)
         pygame.draw.rect(screen, black, start_button, 2, border_radius = 10)
         screen.blit(start_text, (start_button.centerx - start_text.get_width()//2, start_button.centery - start_text.get_height()//2))
     
     else:
+
+        #instructions screen
         if show_instructions:
             pygame.draw.rect(screen, white, (50, height//2 - 200, 500, 400), border_radius = 15)
             screen.blit(instructions, (width//2 - instructions.get_width()//2, height//2 - 125))
@@ -263,6 +277,7 @@ while True:
             screen.blit(instructions3, (width//2 - instructions3.get_width()//2, height//2 - 25))
             screen.blit(instructions4, (width//2 - instructions4.get_width()//2, height//2 + 25))
 
+            #ready button
             ready_button_color = gray if ready_button.collidepoint(mouse_pos) else white
             pygame.draw.rect(screen, ready_button_color, ready_button, border_radius = 10)
             pygame.draw.rect(screen, black, ready_button, 2, border_radius = 10)
@@ -306,6 +321,3 @@ while True:
                 pygame.draw.circle(screen, red, cb_rect.center, 10)
 
     pygame.display.update()
-
-    #cloud variation
-    #inifite climber
