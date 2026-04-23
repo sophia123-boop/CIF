@@ -119,7 +119,7 @@ Physical computing bridges the gap between online coding and real-world technolo
 #### How it's created:
 With the basic items like jumper wires and bread boards we assemebled it to become a mini dector that senses data around it. Using things like ultrasound and infrared light, it can send data as to how close the nearest object is and if it detects motion within its radar. Then, a website was created using HTML that makes the data easier to read instead of endless scrolling pages.
 
-![IMG_2124](https://github.com/user-attachments/assets/5363cae9-acda-48be-9013-927fb92d4b7d)
+<img alt="IMG_212" src="https://github.com/user-attachments/assets/5363cae9-acda-48be-9013-927fb92d4b7d" />
 
 ### To install/play:
 For most of these games, if you want to try yourself: 
