@@ -112,15 +112,24 @@ The goal of the first version is to simply jump on the moving clouds to reach a 
 
 To know more visit my medium page: [CIF Project #4 - Pygame](https://medium.com/@sofiew0504/cif-projects-4-pygame-c31ee3a5ab4a?postPublishedType=repub)
 
+### Project 5: Physical Computing
+#### What it is:
+Physical computing bridges the gap between online coding and real-world technologies. Using wires and sensors, you can learn to build your own systems that sends data directly to your devices.
+
+#### How it's created:
+With the basic items like jumper wires and bread boards we assemebled it to become a mini dector that senses data around it. Using things like ultrasound and infrared light, it can send data as to how close the nearest object is and if it detects motion within its radar. Then, a website was created using HTML that makes the data easier to read instead of endless scrolling pages.
+
+![IMG_2124](https://github.com/user-attachments/assets/5363cae9-acda-48be-9013-927fb92d4b7d)
+
 ### To install/play:
-For any of these games, if you want to try yourself: 
+For most of these games, if you want to try yourself: 
 1. Setup a python environment in your VS code
 2. Download py file from my github
 3. Save, run, and enjoy!
 
 Otherwise, just copy it into any python IED and run it.
 
-For special ones like turtle and pygame, you can't run in any python IED as most don't support the modules. Also for pygame, you'll need to download the images attached to this github in order to play the game with visuals.
+For special ones like turtle and pygame, you can't run in any python IED as most don't support the modules. For pygame, you'll also need to download the images attached to this github in order to play the game with visuals.
 
 ## Your turn
 Now it's your turn to try, if this sounds intresting to you or someone you know, you can sign up for classes here: [cif sign ups](https://www.itisfun.org/)
